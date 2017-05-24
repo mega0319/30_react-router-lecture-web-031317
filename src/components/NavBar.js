@@ -22,6 +22,7 @@ function NavBar(props){
             <li><Link to="/">Home</Link></li>
             <li><Link to="/dogs">Dogs</Link></li>
             <li><Link to="/students">Students</Link></li>
+            <li><Link to="/students/new">Add Student</Link></li>
           </ul>
         </div>
       </div>

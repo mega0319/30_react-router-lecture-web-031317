@@ -3,6 +3,16 @@ export function fetchStudents(){
     .then( res => res.json() )
 }
 
+export function deleteStudent(studentID){
+  return fetch(`http://localhost:3000/api/v1/students/${studentID}`, {
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: 'DELETE'
+  }).then( res => res.json() )
+}
+
 export function createStudent(name){
   return fetch("http://localhost:3000/api/v1/students", {
     headers: {
@@ -12,4 +22,5 @@ export function createStudent(name){
     method: 'POST',
     body: JSON.stringify( {student: {name: name}} )
   })
+  .then( res => res.json() )
 }
