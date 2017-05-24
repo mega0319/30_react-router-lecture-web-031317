@@ -29,7 +29,7 @@ function StudentList(props) {
             const student = props.students.find( (student) => student.id === parseInt(id))
             if (student){
               return (
-                <StudentsShow student={student.name} id={student.id} onDelete={props.onDelete}/>
+                <StudentsShow student={student} onDelete={props.onDelete} onEdit={props.onEdit}/>
               )
             }else{
               return (
