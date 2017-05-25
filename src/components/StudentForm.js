@@ -28,7 +28,7 @@ export default class StudentForm extends React.Component {
         <form onSubmit={this.handleSubmit.bind(this)}>
           <label>Student Name</label>
           <input type='text' value={this.state.student} onChange={this.handleInputChange}/>
-          <input className="btn" type='submit' value='Add a Student' />
+          <input className="btn btn-default" type='submit' value='Add a Student' />
         </form>
       </div>
     )
